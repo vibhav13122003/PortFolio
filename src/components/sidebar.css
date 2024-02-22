@@ -1,0 +1,167 @@
+#slider {
+  overflow: hidden;
+  z-index: 10;
+}
+
+.my-nav {
+  position: fixed;
+  top: 20%;
+  right: 7%;
+  z-index: 11;
+}
+
+.my-nav ul {
+  list-style-type: none;
+  padding: 0;
+  transform: translatex(220px);
+}
+
+.my-nav ul li {
+  display: block;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 300px;
+  text-align: left;
+  padding: 10px;
+  border-radius: 30px 0 0 30px;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.my-nav ul li:hover {
+  transform: translatex(-40px); 
+  padding: 5px;
+}
+
+.my-nav ul li:hover span {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.my-nav ul li span {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translateX(-100%);
+}
+
+.my-nav ul li.my-home:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.my-nav ul li.my-about:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.my-nav ul li.my-project:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.my-nav ul li.my-contact:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.my-nav ul li a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.my-nav ul li .rotate-icon {
+  margin-right: 20px;
+  color: green;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+.my-nav ul li:hover .rotate-icon {
+  transform: rotate(360deg);
+  transition: all 1s;
+  background-color: #f30876;
+  color: #ffffff;
+}
+/* sidebar.css */
+/* sidebar.css */
+/* 
+#slider {
+  overflow: hidden;
+  z-index: 10;
+}
+
+.my-nav {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: var(--color-gray-5);
+  width: 100%;
+  border-top: 1px solid #fff; 
+  z-index: 11;
+}
+
+.my-nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.my-nav ul li {
+  width: auto;
+  padding: 10px;
+  border-radius: 0;
+}
+
+.my-nav ul li.my-home:hover,
+.my-nav ul li.my-about:hover,
+.my-nav ul li.my-project:hover,
+.my-nav ul li.my-contact:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.my-nav ul li a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.my-nav ul li .rotate-icon {
+  margin-right: 20px;
+  color: green;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+.my-nav ul li:hover .rotate-icon {
+  transform: rotate(360deg);
+  transition: all 1s;
+  background-color: #f30876;
+  color: #ffffff;
+}
+
+@media (max-width: 850px) {
+  .my-nav ul li.my-home:hover,
+  .my-nav ul li.my-about:hover,
+  .my-nav ul li.my-project:hover,
+  .my-nav ul li.my-contact:hover {
+    background-color: transparent; 
+  }
+
+  .my-nav ul li .rotate-icon {
+    margin-right: 0;
+  }
+} */
