@@ -15,19 +15,20 @@ const Sidebar = () => {
           <li className='my-home'>
             <Link to='/'>
               <FontAwesomeIcon icon={faHome} className='rotate-icon' />
-              Home
+              <span>Home</span>
+
             </Link>
           </li>
           <li className='my-about'>
             <Link to='/events'>
               <FontAwesomeIcon icon={faUserSecret} className='rotate-icon' />
-              About
+              <span>About</span>
             </Link>
           </li>
           <li className='my-project'>
             <Link to='/music'>
               <FontAwesomeIcon icon={faCode} className='rotate-icon' />
-              Projects
+             <span>Projects</span>
             </Link>
           </li>
           <li className='my-contact'>
@@ -36,7 +37,7 @@ const Sidebar = () => {
                 icon={faSquareEnvelope}
                 className='rotate-icon'
               />
-              Contact us
+              <span>Contact Me</span>
             </Link>
           </li>
         </ul>

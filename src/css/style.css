@@ -182,7 +182,7 @@ section {
 .header-content .left-header .h-shape {
   background-color: var(--color-secondary);
   -webkit-clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
-          clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+  clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
   height: 100%;
   left: 0;
   position: absolute;
@@ -206,7 +206,7 @@ section {
   filter: grayscale(100%);
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: var(--transition-1);
   width: auto;
   padding: 2rem 1rem 0rem 1rem;
@@ -453,7 +453,7 @@ section {
   border-radius: 15px;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 .portfolio .portfolios .portfolio-item .hover-items {
@@ -936,7 +936,12 @@ section {
   .contact .contact-content-con .left-contact p {
     font-size: clamp(0.9rem, 4vw, 1.1rem);
   }
-  .contact .contact-content-con .left-contact .contact-info .contact-item .icon {
+  .contact
+    .contact-content-con
+    .left-contact
+    .contact-info
+    .contact-item
+    .icon {
     font-size: clamp(0.8rem, 3vw, 1.1rem);
   }
   .contact .contact-content-con .left-contact .contact-info .contact-item p {
@@ -946,8 +951,18 @@ section {
     margin-left: 0;
     margin-top: 2.5rem;
   }
-  .contact .contact-content-con .right-contact .contact-form .input-control input,
-  .contact .contact-content-con .right-contact .contact-form .input-control textarea {
+  .contact
+    .contact-content-con
+    .right-contact
+    .contact-form
+    .input-control
+    input,
+  .contact
+    .contact-content-con
+    .right-contact
+    .contact-form
+    .input-control
+    textarea {
     font-size: clamp(0.9rem, 4vw, 1.1rem);
     padding: 0.6rem 1rem;
   }
@@ -975,4 +990,14 @@ section {
     left: 5%;
     top: 10px;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
+@media (max-width: 1026px) and (min-width: 1005px) {
+  .header-content .right-header {
+    margin-right: 40px !important;
+  }
+}
+@media (min-width: 1026px) {
+  .header-content .right-header {
+    margin-right: 40px !important;
+  }
+}
