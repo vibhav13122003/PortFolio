@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.secondarycontainer {
+  margin: 40px;
+}
+.heading {
+  align-self: center;
+  font-size: 4.5rem;
+}
+.heading span,
+.sub-heading span {
+  color: #f30876;
+}
+
+.sub-heading {
+  margin-top: 30px;
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.4rem;
+  margin: 5px 0px;
+}
+.email {
+  margin-top: 15px;
+
+  font-size: 1.3rem;
+  display: flex;
+  gap: 1rem;
+}
+.icon {
+  font-size: 1.6rem;
+  margin-top: 5px;
+}
+.contact-links {
+  font-size: 2.5rem;
+  gap: 2.5rem;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 5px;
+  justify-content: center;
+}
+
+.contact-links :hover {
+  color: #f30876;
+}
+@media (max-width: 480px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .sub-heading {
+    font-size: 1.5rem;
+  }
+  .email {
+    font-size: 1rem;
+  }
+}
