@@ -1,0 +1,153 @@
+/* About.css */
+
+.container {
+  width: 80%;
+  margin-left: 2%;
+  gap: 1rem;
+}
+.firstContainer {
+  text-align: center;
+}
+.firstContainer,
+.secondContainer,
+.thirdContainer {
+  --shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    #0000002b 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: var(--shadow);
+}
+.secondContainer {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.skills-container,
+.frameworks-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.content-contianer {
+  display: flex;
+  gap: 2rem;
+}
+.img-container {
+  margin-right: 23rem;
+}
+.aboutHeading {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  font-size: 48px;
+}
+
+.aboutHeading span {
+  color: #27ae60;
+}
+.section {
+  margin: 20px 0;
+}
+
+.firstContainer p {
+  color: white;
+  font-size: 17.5px;
+  font-family: sans-serif;
+}
+
+.skills-section {
+  margin-top: 20px;
+}
+
+h2 {
+  color: #27ae60;
+}
+
+.skills-container,
+.frameworks-container {
+  margin-bottom: 20px;
+}
+
+.skills-container span,
+.frameworks-container span {
+  display: inline-block;
+}
+
+.work-experience {
+  margin-top: 20px;
+}
+
+.work-experience li {
+  margin-bottom: 10px;
+}
+
+strong {
+  color: #27ae60;
+}
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.img-container span {
+  display: none;
+}
+.html:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+  color: #e34c26;
+}
+.css:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+  color: #264de4;
+}
+.js:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+  color: #f0db4f;
+}
+.react:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+  color: #61dbfb;
+}
+.java:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+  color: #f89820;
+}
+.node:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+  color: #68a063;
+}
+.tailwind:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+  color: #38bdf8;
+}
+.express:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+  color: #6cc24a;
+}
+.img-container {
+  margin-right: 23rem;
+  position: relative;
+}
+
+.img-container span {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.img-container:hover span {
+  display: inline-block;
+  opacity: 1;
+}
