@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Sidebar from "./components/SideBar";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Project from "./pages/Project";
 
 
 const App = () => (
@@ -13,6 +14,7 @@ const App = () => (
       <Route index path='/' element={<Home />} />
       <Route path='contact' element={<Contact />} />
       <Route path='about' element={<About />} />
+      <Route path='/project' element={<Project/>}/>
       {/* Other routes */}
     </Routes>
   </div>
