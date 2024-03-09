@@ -107,7 +107,13 @@ i {
   transition: var(--transition-1);
   width: 100%;
 }
-
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body {
   -ms-overflow-style: none;
   -webkit-tap-highlight-color: transparent;

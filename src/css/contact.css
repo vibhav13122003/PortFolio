@@ -5,13 +5,30 @@
 .container {
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+.main{
+  margin: 0;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .secondarycontainer {
   margin: 40px;
 }
 .heading {
+  margin-top: -12rem;
   align-self: center;
   font-size: 4.5rem;
+}
+a {
+  color: #836fff;
 }
 .heading span,
 .sub-heading span {
