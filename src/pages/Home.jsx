@@ -41,15 +41,20 @@ const Home = () => {
               </h1>
               <p>
                 A dedicated web developer, I specialize in creating seamless
-                projects using React. My passion extends to Python, where I
-                explore the exciting realm of machine learning. Feel free to
-                inquire about web development or Python, as I am enthusiastic
-                about writing code and continually expanding my knowledge with
-                new features. Let&apos;s embark on a journey to transform ideas
-                into digital realities together.
+                projects using React and the MERN stack. My passion lies in building full-stack
+                applications that transform ideas into dynamic digital
+                solutions. Feel free to inquire about web development or the
+                MERN stack, as I am always enthusiastic about coding and
+                exploring the latest technologies. Let&apos;s collaborate to bring
+                your visions to life and create impactful web experiences
+                together.
               </p>
               <div className='btn-container'>
-                <a href='#' className='main-btn'>
+                  <a
+                  href='Resume.pdf' 
+                  className='main-btn'
+                  download='Vibhav_Resume.pdf'  
+                >
                   <span className='btn-text'>Download CV</span>
                   <span className='btn-icon'>
                     <i className='fa-solid fa-download'></i>

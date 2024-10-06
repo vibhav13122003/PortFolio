@@ -13,6 +13,7 @@
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     #0000002b 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   box-shadow: var(--shadow);
+  background-color: #2B322E;
 }
 .secondContainer {
   padding-left: 50px;
@@ -75,6 +76,7 @@
 
 .work-experience {
   margin-top: 20px;
+  margin-left: 15px;
 }
 
 .work-experience li {

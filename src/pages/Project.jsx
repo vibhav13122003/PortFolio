@@ -8,7 +8,7 @@ import { HashLoader } from "react-spinners";
 
 import "../css/project.css";
 
-const ProjectCard = ({ heading, subheading, number, content,image }) => {
+const ProjectCard = ({ heading, subheading, number, content,image,gitlink,weblink}) => {
   return (
     <div className='container-project'>
       <div className='content-inner'>
@@ -31,10 +31,15 @@ const ProjectCard = ({ heading, subheading, number, content,image }) => {
           <div className='cf-inner'>
             <div className='inner'>
               <div className='dec-icon'>
+                <a href={gitlink} target='_blank' rel='noopener noreferrer'>
                 <FontAwesomeIcon icon={faGithub} size='2x' />
+                
+                </a>
               </div>
               <div className='dec-icon'>
-                <FontAwesomeIcon icon={faLinkSlash} size='2x' />
+                <a href={weblink} target='_blank' rel='noopener noreferrer'>
+                  <FontAwesomeIcon icon={faLinkSlash} size='2x' />
+                </a>
               </div>
               <p>{content}</p>
             </div>
@@ -51,50 +56,74 @@ ProjectCard.propTypes = {
   number: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
+  gitlink: PropTypes.string.isRequired,
+  weblink: PropTypes.string.isRequired,
 };
 
 const Project = () => {
   const projectData = [
     {
       heading: "ARCADE",
-      subheading: "Lorem ipsum dolor sit amet",
+      subheading: "Ar based Learning Platform",
       number: "01",
-      content: "Content for Project 1...",
-      image: "../arcade.png"
+      content:
+        "An Ar/Vr based learning platform which focus on the learning based on Ar technologies",
+      image: "../arcade.png",
+      gitlink: "https://github.com/Vibhav-2000/arcade",
+      weblink: "https://arcade-9b6f4.web.app/",
     },
+
     {
       heading: "Hospital Management",
       subheading: "Lorem ipsum dolor sit amet",
       number: "02",
-      content: "../Hospital.png",
-      image: "../Hostpital.png"
+      content:
+        "A full stack hospital management system where paitents can book the appointment.The admin dashboard for management of doctors and appointments",
+      image: "../Hostpital.png",
+      gitlink: "https://github.com/vibhav13122003/Hospital-management",
+      weblink: "https://hospital-management-mocha-nu.vercel.app/",
     },
+
     {
-      heading: "Chat App",
-      subheading: "Lorem ipsum dolor sit amet",
+      heading: "Git Hub portfolio",
+      subheading: "A Git hub Portfolio",
       number: "03",
-      content: "Content for Project 2...",
-      image: "../chatApp.png"
+      content: "A full stack web chat application ",
+      image: "../chatApp.png",
+      gitlink: "https://github.com/Vibhav-2000/ChatApp",
+      weblink: "https://chatapp-9b6f4.web.app/",
     },
     {
-      heading: "Nasa Project",
-      subheading: "Lorem ipsum dolor sit amet",
+      heading: "Ai canva",
+      subheading: "Ai powered Smart canva",
       number: "04",
-      content: "Content for Project 2...",
+      content:
+        "The canva can the process the drawn images and give the output accordingly",
+      image: "../Aicanva.png",
+      gitlink: "https://github.com/vibhav13122003/AI-canvas",
+      weblink:
+        "https://ai-frontend-4sfoxb0c6-vibhav13122003s-projects.vercel.app/",
     },
     {
-      heading: "Project 2",
-      subheading: "Lorem ipsum dolor sit amet",
+      heading: "Barter System",
+      subheading: "A Barter Trading platform ",
       number: "05",
-      content: "Content for Project 2...",
+      content:
+        "A full stack web application where user can trade goods and items in a old fashion way.It aims for recyclability and reduction in wastage of items",
+      image: "../Barter.png",
+      gitlink: "https://github.com/vibhav13122003/BarterSystem",
+      weblink: "https://github.com/vibhav13122003/BarterSystem/",
     },
     {
-      heading: "Project 2",
-      subheading: "Lorem ipsum dolor sit amet",
+      heading: "AMbuvians",
+      subheading: " Ambulance services website",
       number: "06",
-      content: "Content for Project 2...",
+      content:
+        "A website which provides the ambulance service in case of the emergency.",
+      image: "../ambuvians.png",
+      gitlink: "https://github.com/Vibhav-2000/ambuvians",
+      weblink: "https://ambuvians-9b6f4.web.app/",
     },
-    // Add more project data as needed
   ];
 
   const [loading, setLoading] = useState(true);
