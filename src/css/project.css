@@ -16,7 +16,9 @@
   margin: 25px;
   font-size: 25px;
 }
-
+.bg{
+  padding: 15px;
+}
 .projects-container-inner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -30,7 +32,7 @@
 }
 
 .content-inner {
-  margin: 10px; /* Adjust the margin as needed */
+  margin: 10px;
   color: #fff;
   position: relative;
   transform-style: preserve-3d;
@@ -53,9 +55,7 @@
   }
 
   .content-inner {
-    width: calc(
-      90% - 20px
-    ); /* Adjust the width and margin for smaller screens */
+    width: calc(90% - 20px);
     margin: 10px;
   }
 }
@@ -98,8 +98,6 @@
   padding: 150px 30px;
 }
 
-/* ... (other styles remain unchanged) */
-
 .content-front .cf-inner:before,
 .content-front .cf-inner:after {
   content: "";
@@ -126,7 +124,6 @@
 }
 
 .bg img {
-  /* background-image: url(https://cdn.pixabay.com/photo/2021/04/20/16/32/woman-6194370_960_720.jpg); */
   position: absolute;
   top: 0;
   left: 0;
@@ -291,5 +288,10 @@
     grid-template-columns: repeat(2, 1fr);
     padding: auto;
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 969px) {
+  .projects-container-outer {
+    width: 100%;
   }
 }

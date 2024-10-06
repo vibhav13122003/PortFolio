@@ -8,13 +8,14 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 1500);
   }, []);
 
   return (
     <div className='main'>
       {loading ? (
         <HashLoader
+          speedMultiplier={1.5}
           color='#27ae60'
           size={200}
           css={{
@@ -27,11 +28,10 @@ const Home = () => {
       ) : (
         <header className='section sec1 header active' id='home'>
           <div className='header-content'>
-           
             <div className='left-header'>
               <div className='h-shape'></div>
               <div className='image'>
-                <img src='./images/porfile.png' alt='Vishesh' loading='lazy' />
+                <img src='./images/porfile.png' alt='Vibhav' loading='lazy' />
               </div>
             </div>
             {/* Right header content */}

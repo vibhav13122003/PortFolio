@@ -1,4 +1,3 @@
-
 // import { faEnvelopeCircle } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -9,7 +8,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../css/contact.css"; // Import your CSS file
 import { useState, useEffect } from "react";
-import { SquareLoader } from "react-spinners";
+import { HashLoader } from "react-spinners";
 
 const Contact = () => {
   const [loading, setLoading] = useState(true);
@@ -17,13 +16,14 @@ const Contact = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2400);
+    }, 1500);
   }, []);
 
   return (
-    <div className="main">
+    <div className='main'>
       {loading ? (
-        <SquareLoader
+        <HashLoader
+          speedMultiplier={1.8}
           color='#27ae60'
           size={200}
           css={{
@@ -49,7 +49,7 @@ const Contact = () => {
             </p>
             <div className='email'>
               {/* <FontAwesomeIcon icon={faEnvelopeCircle} beat className='icon' /> */}
-              <a href='mailto:vibhavbhartiya13@gmail.com'>
+              <a href='mailto:bhartiyavibhav@gmail.com'>
                 vibhavbhartiya13@gmail.com
               </a>
             </div>

@@ -1,5 +1,3 @@
-/* About.css */
-
 .container {
   width: 80%;
   margin-left: 2%;
@@ -221,7 +219,6 @@ ul strong {
 }
 
 @media screen and (max-width: 700px) {
- 
   .timeline {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
@@ -249,11 +246,19 @@ ul strong {
     font-size: clamp(0.7rem, 3vw, 0.9rem);
     width: 90%;
   }
-
 }
 @media screen and (max-width: 600px) {
   .section {
     padding: 2rem 2.5rem;
   }
-
+}
+@media screen and (max-width: 969px) {
+  .container {
+    width: 96%;
   }
+  .thirdContainer {
+    margin-bottom: 20px;
+  }
+}
+.main-about {
+}

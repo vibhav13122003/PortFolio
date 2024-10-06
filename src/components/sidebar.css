@@ -4,6 +4,7 @@
 }
 
 .my-nav {
+  width: 10%;
   position: fixed;
   top: 20%;
   right: 5.5%;
@@ -13,7 +14,6 @@
 .my-nav ul {
   list-style-type: none;
   padding: 0;
-  transform: translatex(220px);
 }
 
 .my-nav ul li {
@@ -131,7 +131,12 @@
   color: #ffffff;
 }
 */
-@media (max-width: 850px) {
+@media (max-width: 1017px) and (min-width: 969px) {
+  .my-nav {
+    right: 2%;
+  }
+}
+@media (max-width: 969px) {
   .my-nav ul li {
     width: auto;
     padding: 10px;
