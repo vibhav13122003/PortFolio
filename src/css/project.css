@@ -37,6 +37,7 @@
   position: relative;
   transform-style: preserve-3d;
   perspective: 1000px;
+    max-width: 300px;
   backface-visibility: hidden;
   transition: 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }

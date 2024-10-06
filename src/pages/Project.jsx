@@ -68,28 +68,28 @@ const Project = () => {
       number: "01",
       content:
         "An Ar/Vr based learning platform which focus on the learning based on Ar technologies",
-      image: "../arcade.png",
+      image: "/arcade.png",
       gitlink: "https://github.com/Vibhav-2000/arcade",
       weblink: "https://arcade-9b6f4.web.app/",
     },
 
     {
       heading: "Hospital Management",
-      subheading: "Lorem ipsum dolor sit amet",
+      subheading: "A  hospital management",
       number: "02",
       content:
         "A full stack hospital management system where paitents can book the appointment.The admin dashboard for management of doctors and appointments",
-      image: "../Hostpital.png",
+      image: "/Hostpital.png",
       gitlink: "https://github.com/vibhav13122003/Hospital-management",
       weblink: "https://hospital-management-mocha-nu.vercel.app/",
     },
 
     {
       heading: "Git Hub portfolio",
-      subheading: "A Git hub Portfolio",
+      subheading: "A Git hub themed Portfolio",
       number: "03",
       content: "A full stack web chat application ",
-      image: "../chatApp.png",
+      image: "/chatApp.png",
       gitlink: "https://github.com/Vibhav-2000/ChatApp",
       weblink: "https://chatapp-9b6f4.web.app/",
     },
@@ -99,7 +99,7 @@ const Project = () => {
       number: "04",
       content:
         "The canva can the process the drawn images and give the output accordingly",
-      image: "../Aicanva.png",
+      image: "/Aicanva.png",
       gitlink: "https://github.com/vibhav13122003/AI-canvas",
       weblink:
         "https://ai-frontend-4sfoxb0c6-vibhav13122003s-projects.vercel.app/",
@@ -110,7 +110,7 @@ const Project = () => {
       number: "05",
       content:
         "A full stack web application where user can trade goods and items in a old fashion way.It aims for recyclability and reduction in wastage of items",
-      image: "../Barter.png",
+      image: "/Barter.png",
       gitlink: "https://github.com/vibhav13122003/BarterSystem",
       weblink: "https://github.com/vibhav13122003/BarterSystem/",
     },
@@ -120,7 +120,7 @@ const Project = () => {
       number: "06",
       content:
         "A website which provides the ambulance service in case of the emergency.",
-      image: "../ambuvians.png",
+      image: "/ambuvians.png",
       gitlink: "https://github.com/Vibhav-2000/ambuvians",
       weblink: "https://ambuvians-9b6f4.web.app/",
     },
